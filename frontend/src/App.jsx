@@ -35,7 +35,7 @@ function App() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/teams')
+    fetch('https://march-madness-engine-2026.onrender.com/teams')
       .then((res) => res.json())
       .then((data) => setTeams(data))
       .catch((err) => console.error("Error fetching teams:", err));
@@ -56,7 +56,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/predict', {
+      const response = await fetch('https://march-madness-engine-2026.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team1_id: parseInt(team1), team2_id: parseInt(team2) })
