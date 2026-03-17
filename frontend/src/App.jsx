@@ -78,7 +78,7 @@ function App() {
   return (
     <div style={{ maxWidth: '600px', margin: '50px auto', fontFamily: 'system-ui', textAlign: 'center' }}>
       <h1 style={{ lineHeight: '1.2', paddingBottom: '20px' }}>
-        March Madness<br />Upset Engine
+        March Madness<br />Engine 2026
       </h1>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', margin: '30px 0' }}>
